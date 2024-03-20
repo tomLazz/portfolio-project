@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1d1d20;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#inner-container {
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    border: 3px; 
+    border-style: none solid;
+    border-image: linear-gradient(rgb(170, 255, 0), rgb(207, 127, 127)) 1 100%; 
+}
+
+
+#inner-container h1 ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: -2.5%;
+}
+
+#inner-container #header {
+    font-size: 31px;
+    font-weight: 250;
+}
+
+#inner-container h1 ul #projects {
+    margin-left: 45%;
+}
+
+
+#inner-container h1 ul #education {
+    margin-left: 5%;
+}
+
+
+#header ul li {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: whitesmoke; /* Set the initial color */
+}
+
+
+.underline-hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: whitesmoke; /* Set the initial color for the line */
+    transition: width 0.3s ease;
+
+}
+
+
+.underline-hover:hover::before {
+    width: 100%; /* Expand the line to 100% on hover */
+}
+
+#opener-paragraph {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(161, 127, 127), rgb(124, 255, 0));
+    font-size: 100px;
+    margin-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    animation: transitionIn 5s;
+}
+ 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    } to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.body-horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: whitesmoke;
+}    
+
+.left-element {
+    margin-left: -10%;
+}
+
+#name-paragraphs .left-element h1 {
+    font-size: 80px;
+    font-weight: normal;
+}
+
+#about-me {
+    font-size: 15px;
+    animation: transitionIn 1.5s;
+    position: absolute;
+    width: 500px;
+    border-style: none none solid solid;
+    padding-left: 20px;
+    border-image: linear-gradient(to right, rgb(161, 127, 127), rgb(124, 255, 0)) 1;
+}
+
+.body-horizontal ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.body-horizontal ul li {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 400px;
+    animation: transitionIn 2s;
+
+}
+
+.blue-hover {
+    cursor: pointer;
+    font-weight: 200;
+    transition: transform 0.3s ease; /* Use transform for a smoother transition */
+}
+
+.blue-hover:hover {
+    transform: scale(1.05); /* Scale to achieve a font weight effect */
+    font-weight: 500;
+}
+
+.multicolor {
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+      
+}
+
+#clickable-logos {
+    position: absolute;
+    bottom: 0%;
+    animation: transitionIn 1.5s;
+
+}
+
+#clickable-logos img {
+    height: 6%;
+    width: 6%;
+    margin-left: 1%;
+}
+
+
+
+
+#projects-paragraphs .right-element ul {
+    position: absolute;
+    right: 3.5%;
+    top: 15%
+}
+
+#projects-paragraphs .right-element ul li {
+    margin: 15%;
+    cursor: pointer;
+
+}
+
+.left-border {
+    border: 3px blue; 
+    border-style: none none none solid;
+    padding-left: 15px;
+    transition: width 0.3s ease;
+}
+
+#project-opener h1 {
+    position: relative;
+    margin-top: 50%;
+}
+
+#projects-paragraphs .left-element h1 {
+    position: absolute;
+    left: 7.5%;   
+    animation: transitionIn 1s;
+
+}
+
+#projects-paragraphs .left-element h2 {
+    position: absolute;
+    left: 7.5%;
+    top: 21.5%;
+    font-size: 14px; 
+    font-weight: 100;
+    animation: transitionIn 1.5s;
+
+}
+
+#projects-paragraphs .left-element p {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 10%;
+    animation: transitionIn 1.75s;
+
+}
+
+
+#project-opener {
+    position: absolute;
+    bottom: 110%;
+    left: 0;
+    width: 50%;
+}
+
+
+#education-paragraphs .left-element h1 {
+    margin-left: 7.5%;
+}
+
+#class-list li {
+    margin: 2.5%;
+    margin-top: auto;
+    width: 600px;
+    font-size: 13px;
+}
+
+.project-descriptor p a {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+
+.clickable {
+    position: relative;
+    cursor: pointer;
+}
+
+.clickable::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    border-radius: .3rem;
+    text-align: center;
+    left: 11%;
+    top: -20%;
+    max-width: 100%;
+    width: 22.5%;
+    transform: translateX(-50%) translateY(-85%);
+    background: #333;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    visibility: hidden; 
+    font-size: small;
+}
+
+.clickable:hover::after {
+    opacity: 1; 
+    visibility: visible; 
+    animation: fadeInTooltip 0.45s ease; 
+}
+
+@keyframes fadeInTooltip {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#education-paragraphs .right-element {
+    position: relative;
+    right: 10%;
+}
+
+#education-paragraphs .right-element p {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+#skills {
+    width: 200%;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -15px;
+}
+
+
+.small-heading {
+    font-size: 1.1em; 
+}
+
+

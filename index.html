@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas L</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+
+<body>
+    <div id = "inner-container" class = "bordercolor">
+        <h1 id = "header">
+            <ul>
+                <li class = "underline-hover trigger-text" data-target="name-paragraphs">Thomas Lazzarini</li>
+                <li id = "projects" class = "underline-hover trigger-text" data-target="projects-paragraphs">Projects</li>
+                <li id = "education" class = "underline-hover trigger-text" data-target="education-paragraphs">Education</li>
+            </ul>
+        </h1>
+
+
+        <h2 id = "opener-paragraph" class = "multicolor">Welcome.</h2>
+
+        <div id = "name-paragraphs" class = "hidden">
+
+            <div class = "body-horizontal">
+                <div class = "left-element">
+                    <h1>Hello,</h1>
+                      
+                    <div id = "about-me" class = "bordercolor">
+                        <p id>I'm Thomas Lazzarini, a coder from Northern Virginia. I am currently persuing 
+                            my higher education at the University of Maryland, with a major in Computer Science 
+                            and a minor in Math. <br> <br> I'm seeking an internship for the summer to gain experience
+                            coding in a professional setting, and to have the opportunity to learn from more experienced 
+                            software engineers than myself.
+
+                        </p>  
+                    </div>
+                                  
+                </div>
+    
+                <ul>
+                    <li class = "clickable" data-tooltip = "Click to Copy" to-copy = "thomas.lazzarini1@gmail.com">Email: thomas.lazzarini1@gmail.com</li>
+                    <br>
+                    <li class = "clickable" data-tooltip = "Click to Copy" to-copy = "5712332934">Phone: 571-233-2934</li>
+                    <br>
+                    <li class = "clickable" data-tooltip = "Click to Copy" to-copy = "https://www.linkedin.com/in/thomas-lazzarini-72048728a/">LinkedIn: Thomas Lazzarini</li>
+
+                </ul>
+            </div>
+            
+        </div>
+
+
+        <div id = "projects-paragraphs" class = "hidden">
+            <div class = "body-horizontal">
+                <div class = "left-element">
+
+                    <div id = "project-opener">
+                        <h1>Select a Project to Explore</h1>
+                    </div>
+
+                    <div id = "8tile" class = "hidden project-descriptor">
+                        <h1>8 Puzzle Solver</h1>
+                        <h2>C, Python</h2>
+                        <p>
+                            Created a large dataset of 8 puzzle game states and corresponding moves with an implementation of A* algorithim
+                            created using C. This dataset was used to train a Convolutional Neural Network, created with Pytorch, to predict
+                            the best move for a given board with ~85% accuracy. This predictive model was used as a hurestic in an informed search algorithm,
+                            ultimately creating a much less computationally costly approach for solving the 8 puzzle than traditional solutions.
+                            <br> <br> 
+                            <a target="_blank" class = "blue-hover" href="https://github.com/tomLazz/8-puzzle-game">Source Code</a>
+                        </p>
+                    </div>
+
+                    <div id = "regex" class = "hidden project-descriptor">
+                        <h1>Regular Expression Suite</h1>
+                        <h2>OCaml</h2>
+                        <p>
+                            Created a suite of OCaml functions to streamline and optimize Regular Expression implementations. These functions encompass
+                            converting formatted strings to regular expressions encoded as recursive variant types, verifying string acceptance in a set 
+                            via a nondeterministic finite automaton (NFA) record, transforming regular expressions into NFA representations, and further
+                            converting NFAs to DFAs for greater efficiency.
+                            <br> <br> 
+                            <a href="github source">Source Code</a>
+                        </p>
+                    </div>
+
+                    <div id = "portfolio-webste" class = "hidden project-descriptor">
+                        <h1>Portfolio Website</h1>
+                        <h2>JavaScript, HTML, CSS</h2>
+                        <p>
+                            Created an AWS Hosted webpage using HTML, CSS, and JavaScript as an interactive portfolio to display
+                            my interests, goals, acedemic achievements, and projects to prospective future employers.
+                            <br> <br> 
+                            <a href="github source">Source Code</a>
+                        </p>
+                    </div>
+
+                    <div id = "mandelbrot-viewer" class = "hidden project-descriptor">
+                        <h1>Mandelbrot viewer</h1>
+                        <h2>C++</h2>
+                        <p>
+                            All the stuff I want to write about the maze Game
+                            <br> <br>
+                            <a href="github source">Source Code</a>
+                        </p>
+                    </div>
+
+
+
+
+                </div>
+    
+                <div class = "right-element">
+                    <ul> 
+                        <li class = "trigger-text bordercolor" data-target="8tile">8 Puzzle Solver</li>
+                        <li class = "trigger-text bordercolor" data-target="regex">Regular Expression Suite</li>
+                        <li class = "trigger-text bordercolor" data-target="portfolio-webste">Portfolio Website</li>
+                        <li class = "trigger-text bordercolor hidden" data-target="mandelbrot-viewer">Mandelbrot Viewer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id = "education-paragraphs" class = "hidden">
+            <div class = "body-horizontal">
+                <div class = "left-element">
+                    <h1>Relevant Coursework</h1>
+                    <ul id = "class-list">
+                        <li>CMSC131 - Object-Oriented Programming I</li>
+                        <li>CMSC132 - Object-Oriented Programming II (Data Structures)</li>
+                        <li>CMSC216 - Introduction to Computer Systems</li>
+                        <li>CMSC250 - Discrete Structures</li>
+                        <li>CMSC320 - Introduction to Data Science</li>
+                        <li>CMSC330 - Organization of Programming Languages</li>
+                        <li>CMSC351 - Algorithms</li>
+                        <li><br></li>
+                        <li>MATH240 - Introduction to Linear Algebra</li>
+                        <li>MATH241 - Calculus III</li>
+                        <li>MATH401 - Applications of Linear Algebra</li>
+                        <li>MATH406 - Introduction to Number Theory</li>
+                        <li>STAT400 - Applied Probability and Statistics I</li>
+                    </ul>
+                </div>
+    
+                <div class = "right-element">
+                    <h1>Skills & More </h1>
+                    <div id="skills">
+                        <h2 class="small-heading">Programming Languages</h2>
+                        <p>Python, C, C++, Java, JavaScript, Rust, Ocaml, HTML</p>
+                        <h2 class="small-heading">Dependencies & More</h2>
+                        <p>Numpy, Pytorch, Pandas, Java Collections Framework, C/C++ STDLIB, JS DOM, CSS</p>
+                        <h2 class="small-heading">Softwares</h2>
+                        <p>SQL, Microsoft Office Suite(Excel, Powerpoint), Github, Google Colab</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id = "clickable-logos" class = "hidden">
+            <!--LinkedIn, Github, ADD RESUME -->
+            <nav>
+                <a target="_blank" href="https://www.linkedin.com/in/thomas-lazzarini-72048728a/"><img src="images\linkedIn.png" alt="linkedIn"></a>
+                <a target="_blank" href="my-github"><img src="images\github.jpg" alt="Github"></a>
+                <a target="_blank" href="images\2024springschedule.pdf"><img src="images\resume.jpg" alt="Resume"></a>
+
+            </nav>
+        </div>
+
+
+
+    </div>
+
+
+    
+
+    <script src="index.js"></script>
+
+</body>
+
+
+</html>
